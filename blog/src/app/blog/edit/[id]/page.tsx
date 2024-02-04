@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/navigation";
 import { useRef, useEffect } from 'react';
 import { Toaster,toast } from 'react-hot-toast';
 
@@ -65,7 +65,7 @@ const page = ({params}: { params: { id: number }}) => {
       console.log(err);
       toast.error("エラーが発生しました");
     });
-  },[]);
+  }, [params.id]);
 
   return (
     <>
