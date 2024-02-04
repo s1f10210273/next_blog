@@ -1,8 +1,7 @@
 "use client";
-
-import { useRouter } from 'next/router';
 import React from 'react';
-import { useRef } from "react";
+import { useRouter } from 'next/router';
+import { useRef, useEffect } from 'react';
 import { Toaster,toast } from 'react-hot-toast';
 
 const baseUrl = "http://localhost:3000/api/blog"
