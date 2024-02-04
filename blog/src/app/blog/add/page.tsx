@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useRef } from "react";
 import { Toaster,toast } from 'react-hot-toast';
@@ -34,7 +34,6 @@ const PostBlog = () => {
     console.log(descriptionRef.current?.value);
 
     router.push("/");
-    router.refresh();
   };
   return (
     <>

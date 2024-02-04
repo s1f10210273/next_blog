@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useRef , useEffect } from "react";
 import { Toaster,toast } from 'react-hot-toast';
@@ -48,7 +48,6 @@ const page = ({params}: { params: { id: number }}) => {
     toast.success("編集に成功しました");//ローディング
 
     router.push("/");
-    router.refresh();
   };
 
   const handleDelete = async (e: React.FormEvent) => {
