@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { PostType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";

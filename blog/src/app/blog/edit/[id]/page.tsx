@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import React from 'react';
@@ -36,7 +35,7 @@ const deleteBlog = async ( id: number) => {
   return res.json();
 }
 
-const page = ({params}: { params: { id: number }}) => {
+const Page = ({params}: { params: { id: number }}) => {
   const router = useRouter();
   const titleRef = useRef<HTMLInputElement | null>(null);
   const descriptionRef = useRef<HTMLTextAreaElement | null>(null);
@@ -99,4 +98,4 @@ const page = ({params}: { params: { id: number }}) => {
   );
 };
 
-export default page;
+export default Page;

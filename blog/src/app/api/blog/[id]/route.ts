@@ -1,8 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
-import { main } from "../route";
+import main  from "../main";
 
 const prisma = new PrismaClient();
+
 
 // ブログ詳細記事取得
 export const GET = async (req: Request, res: NextResponse) => {
