@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useRef, useEffect } from 'react';
 import { Toaster,toast } from 'react-hot-toast';
 
-const baseUrl = "http://localhost:3000/api/blog"
+const baseUrl = "https://next-blog-c7stmp2gi-shueis-projects.vercel.app/api/blog"
 
 const postBlog = async (title: String | undefined, description: String| undefined) => {
   const res = await fetch(baseUrl, {

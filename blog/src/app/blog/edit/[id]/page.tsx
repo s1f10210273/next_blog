@@ -5,10 +5,8 @@ import { useRouter } from "next/navigation";
 import { useRef, useEffect } from 'react';
 import { Toaster,toast } from 'react-hot-toast';
 
-const baseUrl = "http://localhost:3000/api/blog/"
-
 const editBlog = async (title: String | undefined, description: String| undefined, id: number) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
+  const res = await fetch(`https://next-blog-c7stmp2gi-shueis-projects.vercel.app/api/blog/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -19,14 +17,14 @@ const editBlog = async (title: String | undefined, description: String| undefine
 }
 
 const getBlogById = async (id: number) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${id}`);
+  const res = await fetch(`https://next-blog-c7stmp2gi-shueis-projects.vercel.app/api/blog/${id}`);
   const data = await res.json();
   console.log(data);
   return data.posts;
 }
 
 const deleteBlog = async ( id: number) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
+  const res = await fetch(`https://next-blog-c7stmp2gi-shueis-projects.vercel.app/api/blog/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",

@@ -2,7 +2,7 @@ import { PostType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const baseUrl = "http://localhost:3000/api/blog"
+const baseUrl = "https://next-blog-c7stmp2gi-shueis-projects.vercel.app/api/blog"
 
 async function fetchAllblogs() {
   const res = await fetch(baseUrl, {
